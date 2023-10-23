@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>User List</title>
+</head>
+
+<body class="text-gray-800 font-inter">
+
+    <!-- start: Sidebar -->
+    <div class="fixed left-0 top-0 w-52 md:w-56 lg:w-64 h-full bg-[#007c00] z-50 sidebar-menu transition-transform">
+        <a href="" class="flex items-center justify-center py-4">
+            <img src="img/Dashboard/Group 73.png" alt="" class="h-28 md:h-32">
+        </a>
+        <ul class="mt-4 ms-4">
+
+            <li class="mb-1 group active">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-house mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-calendar-days mr-3 text-lg"></i>
+                    <span class="text-sm">Add List</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-hand-holding-dollar mr-3 text-lg"></i>
+                    <span class="text-sm">Finance</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-user mr-3 text-lg"></i>
+                    <span class="text-sm">User</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-regular fa-comments mr-3 text-lg"></i>
+                    <span class="text-sm">Chat</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-arrow-trend-up mr-3 text-lg"></i>
+                    <span class="text-sm">Latest Activity</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end: Sidebar -->
+
+    <!-- start: Main -->
+    <main class="w-full md:w-[calc(100%-208px)] lg:w-[calc(100%-256px)] md:ml-56 lg:ml-64 min-h-screen transition-all main bg-[#edffed]">
+        <!-- Main Header -->
+        <div class="py-4 px-6 flex items-center sticky top-0 left-0 z-30">
+            <button type="button" class="text-lg text-gray-600 sidebar-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+            <ul class="flex items-center text-sm ml-4">
+                <li class="mr-2">
+                    <a href="#" class="text-[#007c00] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold hover:text-gray-600 ">User List</a>
+                </li>
+            </ul>
+            <ul class="ml-auto flex gap-2 md:gap-4 lg:gap-8 items-center">
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-regular fa-bell text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-gear text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown">
+                    <div class="flex gap-4 justify-center items-center">
+                        <div class="hidden sm:flex flex-col">
+                            <h3 class="font-semibold text-base sm:text-base md:text-lg">Nabila A.</h3>
+                            <span class="text-gray-400 text-sm">Admin</span>
+                        </div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-[#c1bbeb]">
+                            <img class="" src="" alt="" title="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Search field -->
+        <div class="p-6 flex flex-col sm:flex-row gap-4 sm:justify-between">
+            <div class="relative w-full sm:w-2/5 ">
+                <input class="w-full lg:w-3/4 py-2 pr-3 pl-10 rounded-3xl shadow" type="text"
+                    placeholder="Search here..">
+                <i class="text-[#007c00] fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2"></i>
+            </div>
+            <div class="w-full sm:w-3/5 flex justify-start md:justify-end gap-4">
+                <button class="border border-[#007c00] rounded-2xl px-4 lg:px-6 py-1 text-[#007c00]">Newest <i
+                        class="ms-4 fa-solid fa-caret-down"></i> </button>
+                <button class="bg-[#007c00] rounded-2xl px-4 lg:px-6 py-1 text-white">+ New Add</button>
+            </div>
+        </div>
+        
+        <div class="p-6">
+            <div class="overflow-x-auto bg-white rounded-lg">
+                <table class="table">
+                    <!-- head -->
+                    <thead>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox" />
+                                </label>
+                            </th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Add Name</th>
+                            <th>City</th>
+                            <th>Contact</th>
+                            <th>Rate</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1 -->
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Samanta William</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>Mana William</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#fb7d5b] rounded-xl  w-24 py-1 ">Due</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Tony Soap</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>James Soap</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#fcc43e] rounded-xl  w-24 py-1 ">Pending</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Karen Hope</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>Justin Hope</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#007c00] rounded-xl  w-24 py-1 ">Paid</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Jordan Nico</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>Amanda Nico</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#fcc43e] rounded-xl  w-24 py-1 ">Pending</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Nadila Adja</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>Jack Adja</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#fb7d5b] rounded-xl  w-24 py-1 ">Due</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                        <tr class="text-[#007c00]">
+                            <th>
+                                <label>
+                                    <input type="checkbox" class="checkbox checkbox-success" />
+                                </label>
+                            </th>
+                            <td>
+                                <div class="flex items-center space-x-3">
+                                    <div class="avatar">
+                                        <div class="mask mask-squircle w-10 h-10">
+                                            <img src="img/Dashboard/Placeholder.png"
+                                                alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold">Jhony Ahmad</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="font-semibold">#123456789</td>
+                            <td class="text-[#A098AE]">6 April,2023</td>
+                            <td>Danny Ahmad</td>
+                            <td>Jakarta</td>
+                            <td>
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-solid fa-phone text-[#007c00]"></i>
+                                    </div>
+                                    <div
+                                        class="bg-[#edffed] rounded-full w-8 h-8 flex justify-center items-center cursor-pointer">
+                                        <i class="fa-regular fa-envelope text-[#007c00]"></i>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class=" text-white text-center bg-[#fcc43e] rounded-xl  w-24 py-1 ">Pending</div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Page Select -->
+
+                <div class="px-6 flex flex-col md:flex-row md:justify-between py-5 gap-2">
+
+                    <div>
+                        <span class="text-gray-400 text-sm">Showing <span class="text-[#007c00] font-bold">1-6</span>
+                            from <span class="text-[#007c00] font-bold">100</span> Data </span>
+                    </div>
+
+
+                    <div class="grid grid-flow-col content-center font-semibold gap-2 my-3">
+                        <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#"><svg
+                                width="6" height="10" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.125 0.75L0.875 7L7.125 13.25" stroke="#84818A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a class="bg-[#007c00] h-8 w-8 rounded-full flex items-center justify-center shadow" href="#">1</a>
+                        <a class="bg-gray-200 h-8 w-8 rounded-full flex items-center justify-center shadow" href="#">2</a>
+                        <a class="bg-gray-200 h-8 w-8 rounded-full flex items-center justify-center shadow" href="#">3</a>
+                        <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#"><svg
+                                width="6" height="10" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.875 0.75L7.125 7L0.875 13.25" stroke="#84818A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- end: Main -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

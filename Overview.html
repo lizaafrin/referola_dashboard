@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Overview</title>
+</head>
+
+<body class="text-gray-800 font-inter">
+
+    <!-- start: Sidebar -->
+    <div class="fixed left-0 top-0 w-52 md:w-56 lg:w-64 h-full bg-[#007c00] z-50 sidebar-menu transition-transform">
+        <a href="" class="flex items-center justify-center py-4">
+            <img src="img/Dashboard/Group 73.png" alt="" class="h-28 md:h-32">
+        </a>
+        <ul class="mt-4 ms-4">
+
+            <li class="mb-1 group active">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-house mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-calendar-days mr-3 text-lg"></i>
+                    <span class="text-sm">Add List</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-hand-holding-dollar mr-3 text-lg"></i>
+                    <span class="text-sm">Finance</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-user mr-3 text-lg"></i>
+                    <span class="text-sm">User</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-regular fa-comments mr-3 text-lg"></i>
+                    <span class="text-sm">Chat</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-arrow-trend-up mr-3 text-lg"></i>
+                    <span class="text-sm">Latest Activity</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end: Sidebar -->
+
+    <!-- start: Main -->
+    <main class="w-full md:w-[calc(100%-208px)] lg:w-[calc(100%-256px)] md:ml-56 lg:ml-64 min-h-screen transition-all main bg-[#edffed]">
+        <!-- Main Header -->
+        <div class="py-4 px-6 flex items-center sticky top-0 left-0 z-30">
+            <button type="button" class="text-lg text-gray-600 sidebar-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+            <ul class="flex items-center text-sm ml-4">
+                <li class="mr-2">
+                    <a href="#" class="text-[#007c00] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold hover:text-gray-600 ">Overview</a>
+                </li>
+            </ul>
+            <ul class="ml-auto flex gap-2 md:gap-4 lg:gap-8 items-center">
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-regular fa-bell text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-gear text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown">
+                    <div class="flex gap-4 justify-center items-center">
+                        <div class="hidden sm:flex flex-col">
+                            <h3 class="font-semibold text-base sm:text-base md:text-lg">Nabila A.</h3>
+                            <span class="text-gray-400 text-sm">Admin</span>
+                        </div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-[#c1bbeb]">
+                            <img class="" src="" alt="" title="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Search field -->
+        <div class="p-6 flex flex-col sm:flex-row gap-4 sm:justify-between">
+            <div class="relative w-full sm:w-2/5 ">
+                <input class="w-full lg:w-3/4 py-2 pr-3 pl-10 rounded-3xl shadow" type="text"
+                    placeholder="Search here..">
+                <i class="text-[#007c00] fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2"></i>
+            </div>
+            <div class="w-full sm:w-3/5 flex justify-start md:justify-end gap-4">
+                <button class="border border-[#007c00] rounded-2xl px-4 lg:px-6 py-1 text-[#007c00]">Newest <i
+                        class="ms-4 fa-solid fa-caret-down"></i> </button>
+                <button class="bg-[#007c00] rounded-2xl px-4 lg:px-6 py-1 text-white">+ New Add</button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="flex flex-col xl:flex-row  gap-8 px-4 sm:px-6 py-4">
+            <div class="w-full xl:w-3/4 bg-white rounded-3xl ">
+                <div class="flex flex-col sm:flex-row items-center px-6 sm:px-8 gap-4 lg:gap-16 my-8">
+                    <div class="w-full sm:w-2/5 h-[250px] bg-[#c6f1c6] rounded-[18px]">
+                        <img src="" alt="">
+                    </div>
+                    <div class="w-full sm:w-3/5">
+                        <div class="flex gap-4 justify-between">
+                            <h3 class="text-lg sm:text-xl md:text-2xl text-[#007c00] font-bold">Lorem ipsum dolor sit amet</h3>
+                            <a href=""><i class="fa-solid fa-ellipsis text-2xl"></i></a>
+                        </div>
+                        <button class="w-30 px-10 py-2 mt-4 bg-[#007c00] rounded-full text-white">Lunch</button>
+                        <h6 class="text-base md:text-lg text-[#9EB49E] mt-4 md:mt-8 w-full lg:w-3/4 text-justify">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                    </div>
+                </div>
+
+                <div class="px-6 sm:px-8 flex gap-4 justify-between items-center max-w-3xl">
+                    <div>
+                        <h4 class="text-[#9EB49E] text-sm">Rating</h4>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <span class="text-[#007c00] font-bold">4.9</span>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center">
+                        <img class="w-4 h-4 sm:w-6 sm:h-6 md:w-10 md:h-8" src="img/Overview/chart.png" alt="">
+                        <div>
+                            <span class="text-[#007c00] font-bold">1.456</span>
+                            <h4 class="text-[#9EB49E] text-sm">Total Order</h4>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center">
+                        <img class="w-4 h-4 sm:w-6 sm:h-6 md:w-10 md:h-8" src="img/Overview/Arrow 1.png" alt="">
+                        <div>
+                            <span class="text-[#007c00] font-bold">26%</span>
+                            <h4 class="text-[#9EB49E] text-sm">Interest</h4>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="radial-progress bg-[#9eb49e] text-[#007c00] border-4 font-extrabold"
+                            style="--value:50;">50%</div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6 px-6 lg:px-8 w-full 2xl:w-2/3">
+                    <div class="w-full sm:w-3/5  pt-6 pb-0 sm:pb-20">
+                        <h2 class="text-xl text-[#007c00] font-bold pb-4">Lorem</h2>
+                        <ul class="list-disc px-4 md:px-6 lg:px-8 text-[#9EB49E] text-justify">
+                            <li> 2 tablespoons butter, softened, divided</li>
+                            <li>1 teaspoon minced fresh parsley</li>
+                            <li> 1/2 teaspoon minced garlic</li>
+                            <li>1/4 teaspoon reduced-sodium soy sauce</li>
+                            <li>1 beef flat iron steak or boneless </li>
+                            <li> top sirloin steak (3/4 pound)</li>
+                            <li> 1/8 teaspoon salt</li>
+                            <li> 1/8 teaspoon pepper</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-2/5 pt-0 sm:pt-6 pb-10 sm:pb-20">
+                        <h2 class="text-xl text-[#007c00] font-bold pb-4">Lorem</h2>
+                        <ul class="list-disc px-4 md:px-6 lg:px-8 text-[#9EB49E]">
+                            <li> Water: 61%</li>
+                            <li>Protein: 26.1 grams.</li>
+                            <li>Carbs: 0 grams.</li>
+                            <li>Sugar: 0 grams.</li>
+                            <li>Fiber: 0 grams.</li>
+                            <li> Fat: 11.8 grams.</li>
+                            <li> Calories: 217.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full xl:w-1/4">
+                <h3 class="text-2xl text-[#303972] font-bold pb-4">Comments</h3>
+                <div class="card bg-white p-6">
+                    <img class="w-6 h-6" src="img/Overview/Quote.png" alt="">
+                    <h5 class="text-base text-[#303972]">Lorem ipsum dolor sit amet consectetur. Purus mauris integer.
+                    </h5>
+
+                    <div class="flex gap-4 pt-6">
+                        <img src="img/Dashboard/Placeholder.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-[#303972]">Samantha W.</h3>
+                            <small class="text-gray-400">5 days ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 mt-6">
+                    <img class="w-6 h-6" src="img/Overview/Quote.png" alt="">
+                    <h5 class="text-base text-[#303972]">Lorem ipsum dolor sit amet consectetur. Purus mauris integer.
+                    </h5>
+
+                    <div class="flex gap-4 pt-6">
+                        <img src="img/Dashboard/Placeholder.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-[#303972]">Karen Hope</h3>
+                            <small class="text-gray-400">5 days ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 mt-6">
+                    <img class="w-6 h-6" src="img/Overview/Quote.png" alt="">
+                    <h5 class="text-base text-[#303972]">Lorem ipsum dolor sit amet consectetur. Purus mauris integer.
+                    </h5>
+
+                    <div class="flex gap-4 pt-6">
+                        <img src="img/Dashboard/Placeholder.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-[#303972]">Tony Soap</h3>
+                            <small class="text-gray-400">5 days ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end: Main -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

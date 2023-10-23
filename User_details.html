@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>User Details</title>
+</head>
+
+<body class="text-gray-800 font-inter">
+
+    <!-- start: Sidebar -->
+    <div class="fixed left-0 top-0 w-52 md:w-56 lg:w-64 h-full bg-[#007c00] z-50 sidebar-menu transition-transform">
+        <a href="" class="flex items-center justify-center py-4">
+            <img src="img/Dashboard/Group 73.png" alt="" class="h-28 md:h-32">
+        </a>
+        <ul class="mt-4 ms-4">
+
+            <li class="mb-1 group active">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-house mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-calendar-days mr-3 text-lg"></i>
+                    <span class="text-sm">Add List</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-hand-holding-dollar mr-3 text-lg"></i>
+                    <span class="text-sm">Finance</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-user mr-3 text-lg"></i>
+                    <span class="text-sm">User</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-regular fa-comments mr-3 text-lg"></i>
+                    <span class="text-sm">Chat</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-200 hover:bg-white hover:text-[#007c00] rounded-l-full group-[.active]:bg-white group-[.active]:text-[#007c00] group-[.selected]:bg-white group-[.selected]:text-[#007c00] sidebar-dropdown-toggle">
+                    <i class="fa-solid fa-arrow-trend-up mr-3 text-lg"></i>
+                    <span class="text-sm">Latest Activity</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end: Sidebar -->
+
+    <!-- start: Main -->
+    <main class="w-full md:w-[calc(100%-208px)] lg:w-[calc(100%-256px)] md:ml-56 lg:ml-64 min-h-screen transition-all main bg-[#edffed]">
+        <!-- Main Header -->
+        <div class="py-4 px-6 flex items-center sticky top-0 left-0 z-30">
+            <button type="button" class="text-lg text-gray-600 sidebar-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+            <ul class="flex items-center text-sm ml-4">
+                <li class="mr-2">
+                    <a href="#" class="text-[#007c00] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold hover:text-gray-600 ">User Details</a>
+                </li>
+            </ul>
+            <ul class="ml-auto flex gap-2 md:gap-4 lg:gap-8 items-center">
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-regular fa-bell text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-gear text-base md:text-xl"></i>
+                </li>
+                <li class="dropdown">
+                    <div class="flex gap-4 justify-center items-center">
+                        <div class="hidden sm:flex flex-col">
+                            <h3 class="font-semibold text-base sm:text-base md:text-lg">Nabila A.</h3>
+                            <span class="text-gray-400 text-sm">Admin</span>
+                        </div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-[#c1bbeb]">
+                            <img class="" src="" alt="" title="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="flex flex-col lg:flex-row gap-4 pb-10">
+            <div class="lg:w-2/3 2xl:w-3/4">
+                <div class="ms-6 mr-8 lg:mr-0 2xl:mr-8 mt-20 bg-base-100 card relative">
+                    <div class="bg-[#007c00] text-white rounded-t-xl ps-5 py-3 h-28"></div>
+                    <div class="absolute top-16 left-6 w-24 h-24 rounded-full bg-[#c1bbeb]">
+                        <img class="" src="" alt="" title="">
+                    </div>
+                    <img class="hidden sm:block absolute right-5 top-[46px] sm:top-[38px] md:top-8 w-40 sm:w-44 md:w-48"
+                        src="img/Dashboard/Rectangle.png" alt="">
+                    <img class="hidden sm:block absolute right-28 top-[68px] sm:top-[60px] md:top-14 w-48 sm:w-56 md:w-60"
+                        src="img/Dashboard/Rectangle (1).png" alt="">
+                    <div class="block md:flex flex-col mt-16 p-6">
+                        <div>
+                            <h3 class="text-[#007c00] font-bold text-2xl">Maria Historia</h3>
+                            <small class="text-[#c1bbeb]">Teacher</small>
+                        </div>
+                        <div
+                            class="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-0 md:gap-10 lg:gap-0 xl:gap-10">
+                            <div class="mt-6 lg:mt-0 xl:mt-6">
+
+                                <div class="flex gap-3 items-center mt-2">
+                                    <div class=" bg-[#007c00] rounded-full flex items-center justify-center  w-8 h-8">
+                                        <i class="fa-solid fa-location-dot text-white"></i>
+                                    </div>
+                                    <h3 class="text-[#007c00] font-semibold text-sm">Jakarta, Indonesia</h3>
+                                </div>
+                            </div>
+                            <div class="mt-0 md:mt-6 lg:mt-0 xl:mt-6">
+
+
+                                <div class="flex gap-3 items-center mt-2">
+                                    <div class=" bg-[#007c00] rounded-full flex items-center justify-center  w-8 h-8">
+                                        <i class="fa-solid fa-phone text-white"></i>
+                                    </div>
+                                    <h3 class="text-[#007c00] font-semibold text-sm">+12 345 6789 0</h3>
+                                </div>
+                            </div>
+                            <div class="mt-0 md:mt-6 lg:mt-0 xl:mt-6">
+
+                                <div class="flex gap-3 items-center mt-2">
+                                    <div class=" bg-[#007c00] rounded-full flex items-center justify-center  w-8 h-8">
+                                        <i class="fa-regular fa-envelope text-white"></i>
+                                    </div>
+                                    <h3 class="text-[#007c00] font-semibold text-sm">Hope@gmail.com</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-[#007c00]">
+                        <h3 class=" font-bold text-xl ">About</h3>
+                        <p class="w-full lg:w-2/3 mt-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="p-6 text-[#007c00]">
+                        <h3 class=" font-bold text-xl ">Education</h3>
+                        <ul>
+                            <li class="list-disc ms-10 mt-4">
+                                <h3 class=" font-bold text-sm ">History Major, University Akademi Historia</h3>
+                                <span class="text-gray-400 text-sm">2013-2017</span>
+                            </li>
+                            <li class="list-disc ms-10 mt-4">
+                                <h3 class=" font-bold text-sm ">Master of History, University Akademi Historia</h3>
+                                <span class="text-gray-400 text-sm">2017-2020</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 text-[#007c00]">
+                        <h3 class=" font-bold text-xl ">Expertise</h3>
+                        <p class="text-sm mt-4 font-bold">
+                            World History, Philosophy, Prehistoric, Culture, Ancient
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 2xl:w-1/4 ms-6 lg:ms-0 xl:ms-6 mr-8">
+                <div class="p-6 card bg-base-100 mt-20">
+                    <h2 class="text-[#007c00] font-bold text-lg">Schedule Details</h2>
+                    <small class="text-gray-400">Thursday, 10th April , 2021</small>
+                </div>
+
+                <div class="mt-5 p-6 card bg-base-100 border-l-8 border-[#4d44b5]">
+                    <h2 class="text-[#007c00] font-semibold text-base">Demo Add</h2>
+                    <small class="text-gray-400">Algorithm</small>
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex gap-4 mt-4">
+                                <i class="fa-regular fa-calendar-days text-red-500"></i>
+                                <small class="text-gray-400">March 20, 2021</small>
+                            </div>
+
+                            <div class="flex gap-4 mt-2">
+                                <i class="fa-regular fa-clock text-yellow-600"></i>
+                                <small class="text-gray-400">09.00 AM - 10.00 AM</small>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/Dashboard/Placeholder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-6 card bg-base-100 border-l-8 border-[#fb7d5b]">
+                    <h2 class="text-[#007c00] font-semibold text-base">Demo Add</h2>
+                    <small class="text-gray-400">Art</small>
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex gap-4 mt-4">
+                                <i class="fa-regular fa-calendar-days text-red-500"></i>
+                                <small class="text-gray-400">March 20, 2021</small>
+                            </div>
+
+                            <div class="flex gap-4 mt-2">
+                                <i class="fa-regular fa-clock text-yellow-600"></i>
+                                <small class="text-gray-400">09.00 AM - 10.00 AM</small>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/Dashboard/Placeholder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-6 card bg-base-100 border-l-8 border-[#fcc43e]">
+                    <h2 class="text-[#007c00] font-semibold text-base">Demo Add</h2>
+                    <small class="text-gray-400">Programming</small>
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex gap-4 mt-4">
+                                <i class="fa-regular fa-calendar-days text-red-500"></i>
+                                <small class="text-gray-400">March 20, 2021</small>
+                            </div>
+
+                            <div class="flex gap-4 mt-2">
+                                <i class="fa-regular fa-clock text-yellow-600"></i>
+                                <small class="text-gray-400">09.00 AM - 10.00 AM</small>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/Dashboard/Placeholder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-6 card bg-base-100 border-l-8 border-[#007c00]">
+                    <h2 class="text-[#007c00] font-semibold text-base">Demo Add</h2>
+                    <small class="text-gray-400">English</small>
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="flex gap-4 mt-4">
+                                <i class="fa-regular fa-calendar-days text-red-500"></i>
+                                <small class="text-gray-400">March 20, 2021</small>
+                            </div>
+
+                            <div class="flex gap-4 mt-2">
+                                <i class="fa-regular fa-clock text-yellow-600"></i>
+                                <small class="text-gray-400">09.00 AM - 10.00 AM</small>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/Dashboard/Placeholder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- end: Main -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
